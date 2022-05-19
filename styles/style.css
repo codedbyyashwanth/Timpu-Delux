@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  width: 100%;
+  max-height: 100vh;
+}
+
+header .swiper {
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+}
+
+header .swiper-wrapper {
+  background-color: black;
+}
+
+header .swiper-slide {
+  width: 100%;
+  height: 100%;
+}
+
+header .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+header .header-content-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(32, 32, 32, 0.3);
+  z-index: 100;
+}
+
+header .header-content {
+  color: #fafafa;
+  width: 94%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header .header-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 5px;
+}
+
+header .header-top-left, header .header-top-right {
+  position: relative;
+}
+
+header .header-top-left span, header .header-top-right span {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 4px;
+}
+
+header .header-top-left ul, header .header-top-right ul {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  clear: both;
+  color: #181515;
+  background-color: #fff;
+  list-style: none;
+}
+
+header .header-top-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+header .header-top .text, header .header-top .social-icons {
+  margin: 0 15px;
+}
+
+header .header-top .social-icons ion-icon {
+  margin: 0 3px;
+  cursor: pointer;
+  font-size: 1.15rem;
+  -webkit-transition: ease 0.4s;
+  transition: ease 0.4s;
+}
+
+header .header-top .social-icons ion-icon:hover {
+  color: #ffb703;
+}
+/*# sourceMappingURL=style.css.map */

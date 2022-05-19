@@ -1,0 +1,107 @@
+@import './base';
+
+header {
+        width: 100%;
+        max-height: 100vh;
+}
+
+header {
+        .swiper {
+                width: 100%;
+                height: 100vh;
+                z-index: 1;
+        }
+
+        .swiper-wrapper {
+                background-color: rgba(0,0,0,1);
+        }
+
+        .swiper-slide {
+                width: 100%;
+                height: 100%;
+
+                img {
+                        width: 100%;
+                        height: 100%;
+                        background-size: cover;
+                        background-position: center center;
+                        object-fit: cover;
+                }
+        }
+}
+
+header {
+        .header-content-box {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: rgba(32, 32, 32, 0.3);
+                z-index: 100;
+        }
+
+        .header-content {
+                color: $secondary-color;
+                @include layout-width;
+        }
+
+        .header-top, .header-nav, .header-text {
+        }
+
+        .header-top {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 20px 5px;
+
+                &-left, &-right {
+                        position: relative;
+
+                        span {
+                                cursor: pointer;
+                                display: flex;
+                                align-items: center;
+                                
+                                ion-icon {
+                                        margin: 3px;
+                                }
+                        }
+
+                        ul {
+                                display: none;
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                clear: both;
+                                color: $primary-color;
+                                background-color: #fff;
+                                list-style: none;
+                        }
+                }
+
+                &-right {
+                        display: flex;
+                        justify-content: center;
+                        align-items: flex-end;
+                }
+
+                .text, .social-icons {
+                        margin: 0 15px; 
+                }
+
+                .social-icons {
+                        ion-icon {
+                                margin: 0 3px;
+                                cursor: pointer;
+                                font-size: 1.15rem;
+                                transition: ease 0.4s;
+
+                                &:hover {
+                                        color: $accent-color;
+                                }
+                        }
+                }
+        }
+
+}
